@@ -1,4 +1,3 @@
-// router.js
 import { createWebHistory, createRouter } from "vue-router";
 import HomeRoute from "@/views/HomeRoute.vue";
 import WinkelwagenRoute from "@/views/WinkelwagenRoute.vue";
