@@ -271,4 +271,14 @@ a {
     opacity: 0;
     transform: translateX(50px);
 }
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    font-size: 16.5px;
+    color: white;
+}
 </style>

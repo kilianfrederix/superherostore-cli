@@ -17,7 +17,7 @@
             <section id="nieuwe-items">
                 <transition name="itemTransition" tag="div">
                     <div v-if="items.length > 0">
-                        <transition-group name="itemTransition" tag="div">
+                        <transition-group name="itemTransition" tag="div" :key="items.id">
                             <div class="item" v-for="(item, index) in items" :key="item.id">
                                 <div class="item-img">
                                     <img :src="pathSmall + item.src" @click="toonGroteFoto(item.src)">
@@ -223,5 +223,15 @@ input,
 .itemTransition-leave-to {
     opacity: 0;
     transform: translateX(-200px);
+}
+
+.nav a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    font-size: 16.5px;
+    color: white;
 }
 </style>
